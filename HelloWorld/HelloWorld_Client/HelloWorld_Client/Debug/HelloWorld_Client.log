@@ -1,0 +1,2 @@
+﻿  main.cpp
+D:\Server\HelloWorld_Client\HelloWorld_Client\main.cpp(35,29): error C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
