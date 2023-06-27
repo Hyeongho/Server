@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Server\HelloWorld_Client\x64\Debug\HelloWorld_Client.exe</FullPath>
+      <FullPath>D:\Server\HelloWorld\HelloWorld_Client\x64\Debug\HelloWorld_Client.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
