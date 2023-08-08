@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 	while (1)
 	{
 		// 데이터 입력
-		printf("\n[보낼 데이터]");
+		printf("\n[보낼 데이터] ");
 
 		if (fgets(buf, BUFSIZE + 1, stdin) == NULL)
 		{
@@ -85,7 +85,7 @@ int main(int argc, char* argv[])
 			break;
 		}
 
-		cout << "[TCP 클라이언트] " << retval << "바이트를 보냈습니다." << endl;
+		cout << "[TCP 클라이언트] " << retval << " 바이트를 보냈습니다." << endl;
 
 		// 데이터 받기
 		retval = recv(sock, buf, retval, MSG_WAITALL);

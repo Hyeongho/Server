@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
 	{
 		string str;
 
-		cin >> str;
+		getline(cin, str);
 
 		if (str == "q" || str == "Q")
 		{
@@ -73,7 +73,7 @@ int main(int argc, char* argv[])
 
 		strncpy(buf, str.c_str(), len);
 
-		buf[len++] = '\n';
+		//buf[len++] = '\n';
 
 		// 데이터 보내기(고정 길이)
 		retval = send(sock, (char*)&len, sizeof(int), 0);
@@ -92,7 +92,8 @@ int main(int argc, char* argv[])
 		}
 
 		printf("\n[TCP 클라이언트] %d + %d 바이트를 보냈습니다.\n", (int)sizeof(int), retval);
-		cout << str << endl << endl;
+
+		str.clear();
 	}
 
 	// 소켓 닫기
